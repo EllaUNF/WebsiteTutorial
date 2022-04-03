@@ -7,13 +7,19 @@
 
 <style>
  
-  body{
+ .headline {
+    margin-top: 150px;
+    margin-bottom: 120px;
+ }
+  
+ body{
     text-align: center;
     background: url(assets/hero-bg.svg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: "Century Gothic";
   }
   
    .project-button {
@@ -23,21 +29,27 @@
       font-size: 15px;
       border: none;
       border-radius: 20px;
-      height: 35px;
-      width: 70px;
+      height: 40px;
+      width: 150px;
       cursor: pointer;
       transition: box-shadow 0.2s;
+      transition: opacity 0.2s;
+      margin-bottom: 60px;
     }
   
     .project-button:hover {
       box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-button:active {
+      opacity: 0.7;
     }
   
    </style>
 </head>
 
 <body>
-  <h1>Willkommen zu meiner Website</h1>
+  <h1 class="headline">Willkommen zu meiner Website</h1>
 
   <h2>Go to Buttons project</h2>
   <a href="./buttons.html"> 
@@ -53,8 +65,18 @@
    Project
  </button> 
   </a> 
+
+  <h2>Go to Text project</h2>
+  <a href="./text.html"> 
+    <button class="project-button">
+   Project
+ </button> 
+  </a>
+
 </body>
 </html>
+
+
 
 
 
