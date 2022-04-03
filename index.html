@@ -1,29 +1,47 @@
-<h1>Willkommen zu meiner Website</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>EllaUNF</title>
 
 <style>
  
-  .tweet-button {
-    background-color: rgb(0, 174, 255);
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    border: none;
-    border-radius: 20px;
-    height: 35px;
-    width: 70px;
-    cursor: pointer;
-    transition: box-shadow 0.2s;
+  body{
+    text-align: center;
+    background: url(assets/hero-bg.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
+  
+   .project-button {
+      background-color: rgb(0, 174, 255);
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      border: none;
+      border-radius: 20px;
+      height: 35px;
+      width: 70px;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+    }
+  
+    .project-button:hover {
+      box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+   </style>
+</head>
 
-  .tweet-button:hover {
-    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
-  }
- </style>
-  
-  
+<body>
+  <h1>Willkommen zu meiner Website</h1>
+
   <h2>Go to Buttons project</h2>
   <a href="./buttons.html"> 
-    <button class="tweet-button">
+    <button class="project-button">
    Project
  </button> 
 </a> 
@@ -31,18 +49,17 @@
 
   <h2>Go to Website project</h2>
   <a href="./website.html"> 
-    <button class="tweet-button">
+    <button class="project-button">
    Project
  </button> 
-</a> 
+  </a> 
+</body>
+</html>
 
+
+
+  
  
-<!--<h2>Go to Task project</h2>
- <a href="./tasks.html"> 
-     <button class="tweet-button">
-    Project
-  </button> 
-</a> -->
 
 
   
