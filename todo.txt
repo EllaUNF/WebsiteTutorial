@@ -1,7 +1,0 @@
-x zentriert
-x background image
--- einheitliche Farbe
--- Erklärungstext
-x backgroung image über ganze seite
-x text.html einfügen
--- moderne Schrifart
