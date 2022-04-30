@@ -1,25 +1,25 @@
 const anzeige = document.getElementById("Time");
 
-var stoppedTime =0;
+var stoppedTime = 0;
 var stopped = true;
 var lastRun = new Date();
 
 function start() {
-    pausiert = false;
+    stopped = false;
 }
 
 function pause() {
-    pausiert = true;
+    stopped = true;
 }
 
 function reset() {
-    pausiert = true;
+    stopped = true;
     stoppedTime = 0;
     updateDisplay();
 }
 
 function updateTime() {
-    if(pausiert === false) {
+    if(stopped === false) {
         stoppedTime += new Date() - lastRun;
         updateDisplay();
     }
@@ -29,7 +29,9 @@ function updateTime() {
 }
 
 function updateDisplay() {
-    anzeige.innerHTML = stoppedTime;
+    let milliseconds = stoppedTime % 1000;
+    let seconds = Math.floor(stoppedTime / 1000) % 60;
+    let minute = M
 }
 
 updateTime();
